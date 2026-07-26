@@ -1,0 +1,21 @@
+generated: '2026-07-18'
+method: searched
+source: https://digbihealth.com/.well-known/
+host: https://digbihealth.com
+note: >-
+  digbihealth.com runs on Shopify; the OIDC/OAuth discovery documents below are
+  the Shopify customer-account authentication surface published at this host
+  (issuer https://shopify.com/authentication/20780145), not a Digbi-owned API.
+documents:
+- path: /.well-known/openid-configuration
+  status: 200
+  file: digbi-health-openid-configuration.json
+- path: /.well-known/oauth-authorization-server
+  status: 200
+  file: digbi-health-oauth-authorization-server.json
+- path: /.well-known/security.txt
+  status: 404
+- path: /.well-known/api-catalog
+  status: 404
+- path: /.well-known/ai-plugin.json
+  status: 404

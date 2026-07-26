@@ -1,8 +1,27 @@
 aid: digbi-health
 name: Digbi Health
-description: 'Digbi Health is a company surfaced as a portfolio company of accel and added to the API
-  Evangelist network as a stub for enrichment. Sector: media. This profile is a lead awaiting the enrichment
-  pipeline.'
+description: >-
+  Digbi Health is a digital therapeutics company delivering a precision-biology virtual
+  clinic for food-related and inflammatory illnesses — obesity, cardiometabolic disease,
+  type 2 diabetes, digestive disorders (IBS, GERD), MSK chronic pain, PCOS, sleep and
+  mental health. Its FoodRx program combines host-genetics and gut-microbiome testing
+  with app-based coaching, precision nutrition, and pre/probiotic therapies, delivered
+  to members through health plans and employers. Digbi Health is backed by Accel. The
+  company operates a consumer-facing storefront and member app rather than a public
+  developer API; this profile captures the public web, agent, and security surfaces
+  observable at digbihealth.com.
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://digbihealth.com/cdn/shop/files/playstore_32x32.png
 url: https://raw.githubusercontent.com/api-evangelist/digbi-health/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +31,17 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
-- Media
+- Health
+- Digital Therapeutics
+- Precision Medicine
+- Genomics
+- Microbiome
+- Nutrition
+- Chronic Care
+- Telehealth
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +49,26 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/digbi-health-domain-security.yml
+- type: WellKnown
+  url: well-known/digbi-health-well-known.yml
+- type: LLMsTxt
+  url: llms/digbi-health-llms.txt
 - type: Website
   url: https://digbihealth.com/
+- type: Blog
+  url: https://digbihealth.com/blogs/science-talk
+- type: Support
+  url: https://digbihealth.com/pages/help
+- type: PrivacyPolicy
+  url: https://digbihealth.com/pages/privacy-and-accuracy
+- type: TermsOfService
+  url: https://digbihealth.com/pages/terms-conditions
+- type: Login
+  url: https://member.digbihealth.com/login
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
