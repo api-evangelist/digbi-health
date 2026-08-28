@@ -10,6 +10,17 @@ description: >-
   company operates a consumer-facing storefront and member app rather than a public
   developer API; this profile captures the public web, agent, and security surfaces
   observable at digbihealth.com.
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: unknown
   onboarding: unknown
